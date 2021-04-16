@@ -14,7 +14,7 @@
       <nav>
         <div id="menu">
           <ul>
-              <li><a href="about_us.html">About Us</a></li>
+              <li><a href="about_us.php">About Us</a></li>
             <li><a href="php/create_new_account.php">Create Account</a></li>
             <li><a href="php/login.php">Log In</a></li>
           </ul>
