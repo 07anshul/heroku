@@ -3,5 +3,9 @@
 echo "what is the problem";
 $myfile = fopen("../messages/ww", "w");
 $text = "wowowowowowwo";
-fwrite($my_file, $text);
+fwrite($myfile, $text);
+$myfile = fopen("../messages/ww", "r");
+while (!feof($myfile)) {
+   echo fgets($myfile).'<br>';
+}
 ?>
