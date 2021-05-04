@@ -27,11 +27,16 @@ ol, ul{
 	list-style: none;
 }
 
+h1{
+  color: brown;
+}
+
 header{
 	overflow: hidden;
 	margin: 0 auto;
 	width: 1500px;
 }
+
 
 #chat_header{
 	text-align: center;
