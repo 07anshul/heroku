@@ -89,14 +89,14 @@ if (!isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == false) {
               echo '<br>'.$msg_time;
               echo '</div>';
 
-              echo '<div id="bttn">';
+              /*echo '<div id="bttn">';
               if (file_get_contents($dir.$date.'/'.$user.'/'.$msg_time) != "This message has been deleted") {
                 echo "<form action='global_chat_msg.php' method='post'>
                    <input type='hidden' name='msg_address' value='$dir$date/$user/$msg_time'>
                    <input type='submit' name='delete_msg' value='Delete msg'>
                </form>";
               }
-              echo '</div>';
+              echo '</div>';*/
               echo '</div>';
               echo '<br><br>';
             }
