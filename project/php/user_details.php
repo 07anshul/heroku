@@ -90,7 +90,7 @@ if (isset($_POST["update"])) {
   <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <title><?php echo $_SESSION["username"]; ?>/Info</title>
-    <link rel="stylesheet" type="text/css" href="/project/css/user_details.css">
+    <link rel="stylesheet" type="text/css" href="../css/user_details.css">
   </head>
   <body>
     <!-- User info from database -->
