@@ -13,7 +13,7 @@ if (!isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == false) {
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" type="text/css" href="/project/css/chat_page.css">
+    <link rel="stylesheet" type="text/css" href="../css/chat_page.css">
   </head>
   <body>
 
