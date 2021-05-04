@@ -1,5 +1,8 @@
 <?php
 
-
-unlink("messages/21-04-08/01:22:41");
+echo "what is the problem";
+$myfile = fopen("../messages/ww", "r");
+while (!feof($myfile)) {
+   echo fgets($myfile).'<br>';
+}
 ?>
