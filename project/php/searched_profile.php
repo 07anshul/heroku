@@ -37,7 +37,7 @@ require_once "config.php";
   <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <title><?php echo $_SESSION["searched_profile"]; ?>/Profile</title>
-    <link rel="stylesheet" type="text/css" href="/project/css/searched_profile.css">
+    <link rel="stylesheet" type="text/css" href="../css/searched_profile.css">
   </head>
   <body>
     <form class="" action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="post">

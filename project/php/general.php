@@ -12,7 +12,7 @@ session_start();
   <head>
     <meta charset="utf-8">
     <title>General- <?php echo $_SESSION["username"]; ?></title>
-    <link rel="stylesheet" type="text/css" href="/project/css/general.css">
+    <link rel="stylesheet" type="text/css" href="../css/general.css">
   </head>
   <body>
 

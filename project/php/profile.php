@@ -94,7 +94,7 @@ if (isset($_GET["search"])) {
   <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <title><?php echo $_SESSION["username"]; ?> - Home</title>
-    <link rel="stylesheet" type="text/css" href="/project/css/profile.css">
+    <link rel="stylesheet" type="text/css" href="../css/profile.css">
   </head>
   <body>
     <header>

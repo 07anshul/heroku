@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <head>
     <meta charset="utf-8">
     <title>Forum</title>
-    <link rel="stylesheet" type="text/css" href="/project/css/forum.css">
+    <link rel="stylesheet" type="text/css" href="../css/forum.css">
   </head>
   <body>
 

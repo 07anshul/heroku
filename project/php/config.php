@@ -1,9 +1,9 @@
 <?php
 
-$servername = "localhost";
-$username = "anshul";
-$password = "777111";
-$database = "project";
+$servername = "us-cdbr-east-03.cleardb.com";
+$username = "b4556e0ce0f10d";
+$password = "788fd875";
+$database = "heroku_85ffbe977f09ea2";
 
 $mysqli = new mysqli($servername, $username, $password, $database);
 

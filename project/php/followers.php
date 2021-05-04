@@ -17,7 +17,7 @@ require_once "config.php";
   <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <title><?php echo $_SESSION["username"]; ?>/Followers</title>
-    <link rel="stylesheet" type="text/css" href="/project/css/followers.css">
+    <link rel="stylesheet" type="text/css" href="../css/followers.css">
   </head>
   <body>
 

@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Basic Forum</title>
-    <link rel="stylesheet" type="text/css" href="/project/css/basic_forum_str.css">
+    <link rel="stylesheet" type="text/css" href="../css/basic_forum_str.css">
   </head>
   <body>
 

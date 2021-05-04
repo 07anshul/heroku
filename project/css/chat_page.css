@@ -166,7 +166,7 @@ font-weight: 400;
 }
 
 .sender_msg {
-	top: 50px;
+ top: 50px;
  bottom: 15px;
  position: relative;
  background: rgb(221,160,221);
@@ -181,5 +181,9 @@ font-weight: 400;
 }
 
 #time {
-	 float: right;
+	 margin-left: 200px;
+}
+
+#bttn {
+	float: right;
 }
