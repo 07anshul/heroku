@@ -82,23 +82,52 @@ header{
 
 .question_form {
   top: 80px;
-  position: fixed;
-  background: blue;
-  margin-top: 20px;
-  margin-left: 500px;
+  position: relative;
+  background: white;
+  margin-top: 10px;
+  margin-left: 300px;
   border: solid black 1px;
   border-radius: 2px;
-  width: 40%;
+  width: 57%;
   padding-left: 50px;
-  padding-top: 20px;
-  padding-right: 30px;
+  padding-top: 10px;
+  //padding-right: 30px;
   padding-bottom: 20px;
 }
 
 #ask_bttn {
-width:89.3%;
+width:94%;
 
-font-size: 20px;
+font-size: 25px;
 font-weight: 400;
 
+}
+
+.question_section {
+	top: 80px;
+ background: white;
+ position : relative;
+ margin-top: 10px;
+ position: relative;
+ margin-left: 300px;
+ border: solid black 1px;
+ border-radius: 2px;
+ width: 57%;
+ padding-left: 50px;
+ padding-top: 10px;
+ padding-bottom: 60px;
+}
+
+.thread {
+	top: 80px;
+  background: white;
+	position : relative;
+  margin-top: 20px;
+  margin-left: 300px;
+  border: solid black 1px;
+  border-radius: 2px;
+  width: 57%;
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 60px;
 }

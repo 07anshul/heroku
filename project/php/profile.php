@@ -109,7 +109,7 @@ if (isset($_GET["search"])) {
                 <li><a href="suggestions.php">Suggestions</a></li>
                 <li><a href="followers.php">Followers</a></li>
                 <li><a href="following.php">Following</a></li>
-                <li><a href="/project/index.html">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="settings.php">Settings</a></li>
                 <li><a href="logout.php">Logout</a></li>
               </ul>

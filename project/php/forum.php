@@ -6,27 +6,6 @@ if (!isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == false) {
   exit;
 }
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-  $dir_path = 'forum_pages/';
-
-  if (!empty($_POST["question"])) {
-
-    $date = date("d-m-y");
-    $time = date("H:i:s");
-    $question = trim($_POST["question"]);
-
-    $new_page_address = $dir_path.$question.'.php';
-
-  if (isset($_POST["create_page"])) {
-    $user_msg = fopen("$new_page_address", "x");
-
-    header("location: $new_page_address");
-
-  }
-  }
-}
-
 
  ?>
 
@@ -41,6 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <body>
 
     <header>
+
       <div class="forum_header">
         <!-- Task bar-->
         <nav>
@@ -54,12 +34,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </nav>
       </div>
+
+      <!-- Searching question form-->
+      <div id="searched_question">
+        <form action="basic_forum_str.php" method="get">
+          <textarea name="question" rows="2" cols="30" placeholder="Search Question"></textarea>
+          <input type="submit" name="search" value="Search"><br>
+        </form>
+      </div>
+
     </header>
 
 <div class="question_form">
-  <form class="new_forum_page" action="" method="post">
-    <textarea name="question" rows="8" cols="80" placeholder="Ask Something Here"></textarea>
-    <input id="ask_bttn" type="submit" name="create_page" value="Ask">
+  <form class="new_forum_page" action="basic_forum_str.php" method="get">
+    <textarea name="question" rows="5" cols="120" placeholder="Ask Something Here"></textarea>
+    <input id="ask_bttn" type="submit" name="ask" value="Ask">
   </form>
 </div>
 

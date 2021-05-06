@@ -27,7 +27,7 @@ if (!isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == false) {
                 <li><a href="forum.php">Forum</a></li>
                 <li><a href="profile.php">My Profile</a></li>
                 <li><a href="suggestions.php">Suggestions</a></li>
-                <li><a href="/project/index.html">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
               </ul>
             </div>
         </nav>

@@ -5,6 +5,11 @@ $username = "b4556e0ce0f10d";
 $password = "788fd875";
 $database = "heroku_85ffbe977f09ea2";
 
+/*$servername = "localhost";
+$username = "anshul";
+$password = "777111";
+$database = "project";*/
+
 $mysqli = new mysqli($servername, $username, $password, $database);
 
 if ($mysqli->connect_error) {
