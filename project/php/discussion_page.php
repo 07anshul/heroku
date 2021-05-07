@@ -14,7 +14,7 @@ if (isset($_GET["search"])) {
 }
 
 //Question retrieval
-$select = "SELECT user_id, ask_time FROM user_questions where question = ?";
+$select = "SELECT user, ask_time FROM user_questions where question = ?";
 
 // Prepare select statement
 if ($stmt = $mysqli->prepare($select)) {
@@ -32,7 +32,7 @@ if ($stmt = $mysqli->prepare($select)) {
     // Check question is in Database
     if ($stmt->num_rows == 1) {
       $searched_question = $param_question;
-      $stmt->bind_result($askers_id, $ask_time);
+      $stmt->bind_result($asker, $ask_time);
       $stmt->fetch();
     }
     else {
@@ -50,7 +50,7 @@ if ($stmt = $mysqli->prepare($select)) {
 }
 
 // Comment retrieval
-$select = "SELECT user_id, comment, ans_time FROM user_comments where question = ?";
+$select = "SELECT user, comment, ans_time FROM user_comments where question = ?";
 
 // Prepare select statement
 if ($stmt = $mysqli->prepare($select)) {
@@ -104,7 +104,7 @@ $mysqli->close();
         <nav>
             <div id="discussion_page_menu">
               <ul>
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="forum.php">Ask Question</a></li>
                 <li><a href="profile.php">My Profile</a></li>
               </ul>
@@ -116,7 +116,7 @@ $mysqli->close();
     <div class="question_section">
       <h2>Discussion</h2>
       <?php
-      echo "$askers_id <br>";
+      echo "$asker <br>";
       echo "$searched_question <br>";
       echo "$ask_time";
       ?>
@@ -127,7 +127,7 @@ $mysqli->close();
       <h2>Thread</h2>
       <?php
       while ($comments = $result->fetch_assoc()) {
-        echo $comments["user_id"].'<br>';
+        echo $comments["user"].'<br>';
         echo $comments["comment"].'<br>';
         echo $comments["ans_time"].'<br>';
       }

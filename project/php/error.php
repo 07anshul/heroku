@@ -21,7 +21,7 @@
         <nav>
             <div id="discussion_page_menu">
               <ul>
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="forum.php">Ask Question</a></li>
                 <li><a href="profile.php">My Profile</a></li>
               </ul>

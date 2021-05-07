@@ -79,7 +79,7 @@ if (!isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == false) {
           ksort($real_time_msg_updation);
 
           foreach ($real_time_msg_updation as $msg_time => $user) {
-
+// User messages
             if ($user == $_SESSION["id"]) {
               $user_msg = fopen($dir.$date.'/'.$user.'/'.$msg_time, "r");
 
@@ -102,6 +102,7 @@ if (!isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == false) {
               echo '</div>';
               echo '<br><br>';
             }
+// Sender messages
             else {
               $select = "SELECT username FROM user_credentials WHERE id = ?";
 

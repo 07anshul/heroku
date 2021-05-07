@@ -10,6 +10,8 @@
     </style>
   </head>
   <body>
-    <h1>We are crazy!!!</h1>
+    <h1>Hey, I am Anshul.</h1><br>
+    <h2>This website is a project developed for the learning process and for fun.</h2><br>
+
   </body>
 </html>
